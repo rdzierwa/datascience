@@ -40,8 +40,24 @@ def file_to_var(name):
 
 
 #print (file_to_var("text.txt"))
-value = list()
-with open("text.txt", "r") as file:
-    for line in file.readlines():
-        value.append(line)
-print(value)
+# value = list()
+# with open("text.txt", "r") as file:
+#     for line in file.readlines():
+#         value.append(line)
+# print(value)
+def czytanie_pliku():
+    content_array = []
+    with open('text.txt') as fp:
+        line = fp.readline()
+
+        while line:
+            content_array.append(line)
+            line = fp.readline()
+    print(content_array)
+
+def read_file():
+    value = list()
+    with open("text.txt", "r") as file:
+        for line in file.readlines():
+            value.append(line)
+    print(value)

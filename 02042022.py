@@ -72,6 +72,8 @@ class BankAccount():
         print(f"Nazwa konta:{self.name}")
         print(f"Stan konta:{self.stan}")
 
+
+
     def pay_in(self, amount):
         self.stan += amount
 
